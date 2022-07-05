@@ -142,10 +142,6 @@ function resetGame(){
     h2ForScore.innerHTML = score
     window.removeEventListener('keydown', move)
     forGameOver.style.visibility = "hidden"
-    // const activeEls = Array.from(document.getElementsByClassName('active'))
-    // if(activeEls.length){
-    //     activeEls.forEach(activeEl => activeEl.classList.remove('active'))
-    // }
     let finishedEls = Array.from(document.getElementsByClassName('finished'))
     finishedEls.forEach(el => el.classList.remove('finished'))
     let randomNumber = Math.floor(Math.random() * 7)
@@ -529,7 +525,7 @@ let rotateS3 = function(i, j){
         return result
     }
 }
-//esi kyanqs kerav
+
 let rotateZ1 = function(i, j){
     if(res[1] >= 9){
         let newJ = 8
